@@ -399,6 +399,74 @@
             color: var(--primary);
         }
 
+        .licenses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .license-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(14, 165, 233, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .license-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .pe-license {
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .pe-license:hover {
+            border-color: var(--success);
+        }
+
+        .cert-card {
+            border-color: rgba(139, 92, 246, 0.3);
+        }
+
+        .cert-card:hover {
+            border-color: var(--secondary);
+        }
+
+        .license-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .license-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .license-type {
+            color: var(--success);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .license-issuer {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
+        }
+
+        .license-dates {
+            color: var(--accent);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-top: 0.75rem;
+        }
+
         footer {
             text-align: center;
             padding: 3rem 2rem;
@@ -427,6 +495,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#licenses">Licenses</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -532,6 +601,81 @@
                     <li>Developed teleprotection schemes using RFL GARD devices for transmission line protection</li>
                     <li>Created electrical drawings including single-line diagrams, AC/DC schematics, and panel wiring diagrams</li>
                 </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="licenses" class="section">
+        <h2 class="section-title">Licenses & Certifications</h2>
+        <p class="section-subtitle">Licensed Professional Engineer across multiple jurisdictions</p>
+        <div class="licenses-grid">
+            <div class="license-card pe-license">
+                <div class="license-icon">🏛️</div>
+                <h3>Texas</h3>
+                <p class="license-type">Professional Engineer (PE)</p>
+                <p class="license-issuer">Texas Board of Professional Engineers and Land Surveyors</p>
+            </div>
+            <div class="license-card pe-license">
+                <div class="license-icon">🏛️</div>
+                <h3>Arizona</h3>
+                <p class="license-type">Professional Engineer (PE)</p>
+                <p class="license-issuer">State of Arizona Board of Technical Registration</p>
+            </div>
+            <div class="license-card pe-license">
+                <div class="license-icon">🏛️</div>
+                <h3>California</h3>
+                <p class="license-type">Professional Engineer (PE)</p>
+                <p class="license-issuer">California Board for Professional Engineers</p>
+            </div>
+            <div class="license-card pe-license">
+                <div class="license-icon">🏛️</div>
+                <h3>Illinois</h3>
+                <p class="license-type">Professional Engineer (PE)</p>
+                <p class="license-issuer">Illinois Department of Financial and Professional Regulation</p>
+                <p class="license-dates">Issued Sep 2025 · Expires Nov 2027</p>
+            </div>
+            <div class="license-card pe-license">
+                <div class="license-icon">🏛️</div>
+                <h3>Pennsylvania</h3>
+                <p class="license-type">Professional Engineer (PE)</p>
+                <p class="license-issuer">Commonwealth of Pennsylvania</p>
+                <p class="license-dates">Issued May 2025</p>
+            </div>
+            <div class="license-card pe-license">
+                <div class="license-icon">🏛️</div>
+                <h3>Minnesota</h3>
+                <p class="license-type">Professional Engineer (PE)</p>
+                <p class="license-issuer">Minnesota Board of AELSLAGID</p>
+                <p class="license-dates">Issued Nov 2024 · Expires Jun 2026</p>
+            </div>
+            <div class="license-card pe-license">
+                <div class="license-icon">🏛️</div>
+                <h3>Michigan</h3>
+                <p class="license-type">Professional Engineer (PE)</p>
+                <p class="license-issuer">Michigan Department of Licensing and Regulatory Affairs</p>
+                <p class="license-dates">Issued Aug 2024 · Expires Aug 2026</p>
+            </div>
+            <div class="license-card cert-card">
+                <div class="license-icon">⚡</div>
+                <h3>MVP - Protection Relay</h3>
+                <p class="license-issuer">ABB</p>
+                <p class="license-dates">Issued Sep 2019</p>
+            </div>
+            <div class="license-card cert-card">
+                <div class="license-icon">⚡</div>
+                <h3>CBT 101 - Introduction to SEL Relays</h3>
+                <p class="license-issuer">Schweitzer Engineering Laboratories (SEL)</p>
+                <p class="license-dates">Issued Jul 2019</p>
+            </div>
+            <div class="license-card cert-card">
+                <div class="license-icon">⚡</div>
+                <h3>Arc Flash Evaluation</h3>
+                <p class="license-issuer">SKM Systems Analysis, Inc</p>
+            </div>
+            <div class="license-card cert-card">
+                <div class="license-icon">⚡</div>
+                <h3>Protection & Coordination</h3>
+                <p class="license-issuer">SKM Systems Analysis, Inc</p>
             </div>
         </div>
     </section>
